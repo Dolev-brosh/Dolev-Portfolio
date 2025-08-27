@@ -78,6 +78,9 @@ div {
     background-color: var(--main-background);
 }
 
+a {
+    position: fixed !important;
+}
 .home-page-btn {
     position: fixed !important;
 }
