@@ -79,7 +79,7 @@ div {
 }
 
 .home-page-btn {
-    position: fixed;
+    position: fixed !important;
 }
 
 .top {
