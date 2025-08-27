@@ -27,13 +27,13 @@ function initComparisons() {
     let w = img.offsetWidth;
     let h = img.offsetHeight;
 
-    // יצירת הסליידר
+
     let slider = document.createElement("DIV");
     slider.setAttribute("class", "img-comp-slider");
     slider.style.left = slider.style.left = (img.offsetWidth - slider.offsetWidth/2) + "px";
     img.parentElement.insertBefore(slider, img);
 
-    // אירועים לגרירה
+
     slider.addEventListener("mousedown", slideReady);
     window.addEventListener("mouseup", slideFinish);
     slider.addEventListener("touchstart", slideReady);
@@ -73,5 +73,4 @@ function initComparisons() {
   }
 }
 
-// מחכה לטעינת כל הדף והתמונות
 window.addEventListener('load', initComparisons);
