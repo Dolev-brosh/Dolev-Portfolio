@@ -223,7 +223,7 @@ a {
 
 .projects-title {
     position: absolute;
-    bottom: 40%;
+    bottom: 50%;
     left: var(--spacing-48);
     color: var(--text-secondary);
     font-size: var(--font-size-20);
