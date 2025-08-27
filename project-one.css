@@ -79,7 +79,7 @@ div {
 }
 
 a {
-    position: fixed !important;
+    /* position: fixed !important; */
 }
 .home-page-btn {
     position: fixed !important;
@@ -144,6 +144,10 @@ a {
     padding: var(--spacing-48);
     width: 100%;
 
+}
+
+#google{
+    position: relative;
 }
 
 .main-header {
