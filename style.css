@@ -168,10 +168,11 @@ a {
 }
 
 .project-box {
-    height: 30%;
+    height: 40%;
     border-radius: var(--spacing-16) var(--spacing-16) 0 0;
     position: relative;
     transition: height 0.4s ease-in-out;
+    padding-bottom: var(--spacing-8);
 }
 
 .project-box:hover {
