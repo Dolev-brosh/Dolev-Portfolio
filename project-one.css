@@ -425,4 +425,8 @@ body {
 .project-img-frame{
     padding: 32px;
 }
+.home-page-btn {
+    position: fixed;
+    z-index: 999;
+}
 }
