@@ -282,18 +282,14 @@ a {
 
 .footer.two {
     height: 100%;
-    grid-area: 5/2/6/3;
+    grid-area: 5/2/6/4;
 }
 
 .footer.three {
     height: 100%;
-    grid-area: 5/3/6/4;
-}
-
-.footer.four {
-    height: 100%;
     grid-area: 5/4/6/5;
 }
+
 
 .left-box.one {
     height: 100%;
