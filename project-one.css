@@ -172,6 +172,7 @@ div {
 .text-wrapper {
     display: flex;
     flex-direction: column;
+    gap: var(--spacing-4);
     justify-content: center;
     align-items: center;
     padding: var(--spacing-48);
