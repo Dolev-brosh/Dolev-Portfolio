@@ -144,7 +144,7 @@ div {
 
 }
 
-#google{
+#google {
     position: relative;
 }
 
@@ -299,140 +299,159 @@ ul {
     width: 200px;
 }
 
-.about-the-project.img-frame.left.impact{
+.about-the-project.img-frame.left.impact {
     width: 70%;
 }
 
-.project-img-frame.with-description.no-border{
+.project-img-frame.with-description.no-border {
     border: none;
 }
 
-.project-img-frame.no-border{
+.project-img-frame.no-border {
     border: none;
 }
 
-a{
+a {
     color: var(--green-text);
 }
 
 .img-comp-container {
-  position: relative;
-  width: 100%;
-  max-width: 1100px;
-  height: 618.45px;
-  overflow: hidden;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: 618.45px;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 
 }
 
 .img-comp-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .img-comp-img img {
-  display: block;
-   width: auto;      
-  height: auto;     
-  max-width: none;  
-  max-height: none; 
-  object-fit: none;
-  
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    object-fit: none;
+
 }
 
 .img-comp-overlay {
-  width: 50%; 
+    width: 50%;
 }
 
 .img-comp-slider {
-  position: absolute;
-  z-index: 9;
-  cursor: ew-resize;
-  width: 8px;
-  background: var(--green-text);
-  top: 0;
-  bottom: 0;
-  border-radius: 999px;
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    width: 8px;
+    background: var(--green-text);
+    top: 0;
+    bottom: 0;
+    border-radius: 999px;
+}
+
+.img-comp-slider::after {
+    content: 'Drag Me';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-white);
+    padding: var(--spacing-4);
+    position: absolute;
+    cursor: ew-resize;
+    width: 100px;
+    height: 20px;
+    font-weight: 500;
+    background: var(--green-text);
+    top: 50%;
+    right: -50px;
+    border-radius: 16px;
 }
 
 
 
-.project-img-frame.slider{
+.project-img-frame.slider {
     padding: 50px;
 }
 
-.project-img{
+.project-img {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
-.project-img.no-shadow{
+.project-img.no-shadow {
     box-shadow: none;
 }
 
 @media (max-width: 1200px) {
-body {
-    background-color: var(--green-background);
-    display: grid;
-    grid-template-columns: 1fr 7fr 1fr;
-    grid-template-rows: 60px auto 40px;
-    height: 100svh;
-    gap: 2px;
-}
+    body {
+        background-color: var(--green-background);
+        display: grid;
+        grid-template-columns: 1fr 7fr 1fr;
+        grid-template-rows: 60px auto 40px;
+        height: 100svh;
+        gap: 2px;
+    }
 
-.project-header{
-    flex-direction: column;
-    height: fit-content;
-    
-}
+    .project-header {
+        flex-direction: column;
+        height: fit-content;
 
-.text-wrapper{
-    padding: 32px;
-    text-align: start;
-    align-items: start;
-}
+    }
 
-.main-header{
-    font-size: 30px;
-}
+    .text-wrapper {
+        padding: 32px;
+        text-align: start;
+        align-items: start;
+    }
 
-.sub-header{
-    font-size: 20px;
-}
+    .main-header {
+        font-size: 30px;
+    }
 
-.details{
-    width: 100%;
-    border-left: none;
-    border-top: 2px solid var(--green-text);
-    padding: 32px;
-}
+    .sub-header {
+        font-size: 20px;
+    }
 
-.project-desciption{
-    flex-direction: column;
-    height: fit-content;
-}
+    .details {
+        width: 100%;
+        border-left: none;
+        border-top: 2px solid var(--green-text);
+        padding: 32px;
+    }
 
-.about-the-project{
-    width: 100%;
-    border-right: none;
-    padding: 32px;
+    .project-desciption {
+        flex-direction: column;
+        height: fit-content;
+    }
 
-}
+    .about-the-project {
+        width: 100%;
+        border-right: none;
+        padding: 32px;
 
-.my-role{
-    width: 100%;
-    border-top: 2px solid var(--green-text);
-    padding: 32px;
-}
+    }
 
-.project-img-frame{
-    padding: 32px;
-}
-.home-page-btn {
-    position: fixed;
-    z-index: 999;
-}
+    .my-role {
+        width: 100%;
+        border-top: 2px solid var(--green-text);
+        padding: 32px;
+    }
+
+    .project-img-frame {
+        padding: 32px;
+    }
+
+    .home-page-btn {
+        position: fixed;
+        z-index: 999;
+    }
 }
