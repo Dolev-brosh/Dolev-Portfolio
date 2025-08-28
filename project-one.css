@@ -111,6 +111,7 @@ div {
 .home-page-btn {
     position: fixed !important;
     width: 250px;
+    z-index: 999;
 }
 
 .home-img {
