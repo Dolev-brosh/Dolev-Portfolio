@@ -1,4 +1,5 @@
 const projectButtons = document.querySelectorAll('.project-box')
+const body = document
 
 console.log(projectButtons);
 
@@ -7,7 +8,8 @@ projectButtons.forEach(btn => {
         console.log(e.target.className);
         
         if (e.target.className === 'project-header one') {
-            window.location.href = "project-one.html"    
+            window.location.href = "project-one.html" 
+
         } else if (e.target.className === 'project-header two'){
             window.location.href = "project-two.html"
         } else if(e.target.className === 'project-header three'){

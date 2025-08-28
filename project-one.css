@@ -1,7 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: "AtlasGrotesk", sans-serif;
     font-optical-sizing: auto;
 }
 
@@ -78,10 +78,45 @@ div {
     background-color: var(--main-background);
 }
 
+@font-face {
+  font-family: "SharpGrotesk";
+  src: url("../fonts/SharpGrotesk-Medium20.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SharpGrotesk";
+  src: url("../fonts/SharpGrotesk-Book20.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AtlasGrotesk";
+  src: url("../fonts/AtlasGrotesk-Light-Trial.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AtlasGrotesk";
+  src: url("../fonts/AtlasGrotesk-Bold-Trial.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+
 
 .home-page-btn {
     position: fixed !important;
+    width: 250px;
 }
+
+.home-img{
+    width: 100%;
+}
+
 
 .top {
     grid-area: 1/2/2/3;
@@ -149,13 +184,17 @@ div {
 }
 
 .main-header {
-    font-size: var(--font-size-48);
+    font-size: 44px;
     color: var(--main-text);
+    font-family: "SharpGrotesk", sans-serif;
+    font-weight: 600;
 }
 
 .sub-header {
     font-size: var(--font-size-28);
     color: var(--text-secondary);
+    font-family: "SharpGrotesk", sans-serif;
+    font-weight: 400;
 }
 
 .details {
