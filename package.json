@@ -1,0 +1,16 @@
+{
+  "name": "dolev-portfolio-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node figma-plugin/scripts/build.mjs",
+    "dev": "node figma-plugin/scripts/dev.mjs",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.12",
+    "typescript": "^5.3.3",
+    "vitest": "^0.34.6"
+  }
+}

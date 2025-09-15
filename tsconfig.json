@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["ES2020", "DOM"],
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": false,
+    "types": ["vitest/importMeta"],
+    "baseUrl": "."
+  },
+  "include": ["figma-plugin/src/**/*.ts", "figma-plugin/tests/**/*.ts"],
+  "exclude": ["figma-plugin/dist"]
+}

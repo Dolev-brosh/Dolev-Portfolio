@@ -1,0 +1,10 @@
+{
+  "name": "Component Forge",
+  "id": "com.dolev.componentforge",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html",
+  "editorType": ["figma", "figjam"],
+  "manifestVersion": 2,
+  "permissions": ["currentuser"]
+}
