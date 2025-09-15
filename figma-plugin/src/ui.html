@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Component Forge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="theme-light">
+    <div id="app" class="app-shell">
+      <header class="top-bar" aria-label="Component configuration">
+        <div class="brand">Component Forge</div>
+        <div class="top-bar__controls">
+          <label class="field">
+            <span>Template</span>
+            <select id="template-select" aria-label="Select template"></select>
+          </label>
+          <label class="field field--name">
+            <span>Name</span>
+            <input id="component-name" type="text" placeholder="Button" />
+          </label>
+          <button id="import-spec" class="ghost">Import JSON</button>
+          <button id="export-spec" class="ghost">Export JSON</button>
+          <button id="save-spec" class="primary">Save</button>
+          <button id="create-components" class="accent">Create</button>
+        </div>
+      </header>
+      <main class="panels" role="presentation">
+        <section id="preview-panel" class="panel preview" aria-label="Preview">
+          <div class="preview-header">
+            <label class="field">
+              <span>State</span>
+              <select id="state-select"></select>
+            </label>
+            <div class="variant-toggles" id="variant-toggle-container"></div>
+            <button class="ghost" id="toggle-theme" aria-label="Toggle theme">Theme</button>
+          </div>
+          <div id="preview-canvas" class="preview-canvas" tabindex="0"></div>
+          <div id="preview-hint" class="preview-hint" role="note">
+            Click any element to bind properties and edit styles.
+          </div>
+        </section>
+        <section id="inspector-panel" class="panel inspector" aria-label="Inspector">
+          <div class="inspector-scroll" id="inspector-content"></div>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="import-dialog">
+      <form method="dialog" class="import-form">
+        <header>
+          <h2>Import specification</h2>
+        </header>
+        <label class="field">
+          <span>JSON</span>
+          <textarea id="import-textarea" rows="12" spellcheck="false"></textarea>
+        </label>
+        <footer>
+          <button value="cancel" class="ghost">Cancel</button>
+          <button id="confirm-import" value="default" class="primary">Import</button>
+        </footer>
+      </form>
+    </dialog>
+
+    <script type="module" src="./ui.js"></script>
+  </body>
+</html>
